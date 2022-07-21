@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+body{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ----------------
+      Header Line
+   ---------------- */
+.top-banner{
+    display: flex;
+    width: 100%;
+   margin-bottom: 100px ;
+    background-image: linear-gradient(red, black);
+    border-radius: 15px;
+ }
+.banner-info{
+    color: white;
+    margin: 5% 5%;
+    width: 60%;
+       
+}
+.banner-info h1{
+     font-size: 70px;
+    font-weight: 700;
+    margin: 0;
+   }
+.banner-info p{
+     font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+   }
+   .link-button{
+       border: 1px solid red;
+       border-radius: 10px ;
+       background-color: red;
+       color: white;
+       font-size: 20px;
+       font-weight: 400;
+       text-align: center;
+       padding: 16px 25px;
+       margin-top:30px ;
+   }
+   .photo-area{
+       display: flex;
+       flex-direction: column;
+   }
+   
+   .photo-area .ball {
+       position: relative;
+       width: 20%;
+       left: 20%;
+       bottom: 25%;
+       
+   }
+   .photo-area .img{
+       width: 80%;
+       justify-content: right;
+
+   }
+   .top-banner:hover .ball{
+       transform: rotate(60deg);
+       transition: transform 1s ease-out 0.2s;
+  transform: translate(-500px, -100px);
+   }
+   /* side navigation  */
+   .container{
+       display: flex;
+   }
+   .button-area{
+       min-width: 312px;
+       max-height: 312px;
+       background-color: black;
+       border-radius: 10px;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       align-items: center;
+       
+   }
+   .Upcoming-match-button button{
+       font-size: 20px;
+       font-weight: 700;
+       width: 252px;
+       height: 64px;
+       border-radius: 10px;
+   }
+   .Upcoming-match-button button a{
+       text-decoration: none;
+       color: black;
+   }
+   .all-group-button button{
+       font-size: 20px;
+       font-weight: 700;
+       width: 252px;
+       height: 64px;
+       border-radius: 10px;
+   }
+     .blog-button button{
+       font-size: 20px;
+       font-weight: 700;
+       width: 252px;
+       height: 64px;
+       border-radius: 10px;
+       background-color: red;
+   }
+   .blog-button button a{
+       text-decoration: none;
+       color: white;
+   }
+   /* side navigation end  */
+    /* blog area start */
+   
+   .blogs{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+   }
+   .blog{
+       margin-left:24px ;
+             
+   }
+   .blog-info{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start ;
+      margin: 0 20px;
+          
+   }
+   .blog-info img{
+       width: 100%;
+       margin-bottom: 20px;
+   }
+   .blog-info button{
+       display: inline-block;
+       width: 100px;
+       height: 32px;
+       border-radius: 5px;
+   }
+   .transfer-button{
+       border: 1px solid #161616;
+       font-size: 16px;
+       font-weight: 500;
+       
+   }
+   .blog-info h2{
+       font-size: 18px;
+       font-weight: 600;
+       margin-bottom: 0;
+   }
+   .time-comments-sec{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       margin-bottom: 5%;
+         }
+    .time-comments-sec i{
+        margin-right: 10px;
+        margin-top: 0;
+    }
+    .time-comments-sec p{
+        margin-right: 30px;
+        
+    }
+
+    .view-all{
+        display: none;
+    }
+
+
+
+ /* footer area  */
+
+   footer{
+      text-align: center;
+       width: 100%;
+       height: 444px;
+       background-color: black;
+       color: white;
+       
+     }
+    .goal{
+        font-size: 48px;
+        font-weight: 600;
+        padding-top: 130px;
+        padding-bottom: 100px;
+    }
+    .footer-item{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 351px ;
+    }
+    .footer-iteml p{
+        font-size: 12px;
+    }
+    .footer-item a{
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    .social-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 100%;
+           }
+    .social-icon i{
+        padding: 10px;
+    }
+/* media query for mobile device  */
+
+    @media only screen and (max-width:576px) {
+.top-banner{
+    display: flex;
+    flex-direction: column;
+ }
+.banner-info h1{
+     font-size: 20px;
+   }
+.banner-info p{
+     font-size: 10px;
+   }
+   .link-button{
+       font-size: 10px;
+       font-weight: 400;
+       text-align: center;
+       padding: 8px 12px;
+       margin-top:30px ;
+   }
+   .photo-area{
+       margin-left: 10%;
+       margin-top: 10.3%;
+       margin-right: 10%;
+       justify-content: right;
+   }
+   .photo-area .ball {
+    position: relative;
+    width: 30%;
+    left: 20%;
+    bottom: 150px;
+    
+}
+   .top-banner:hover .ball{
+    transform: rotate(60deg);
+    transition: transform 3s ease 0.2s;
+    transform: translate(-150px, -30px);
+}
+   .container{
+       display: flex;
+       flex-direction: column;
+
+   }
+   .button-area{
+       min-width: 210px;
+       max-height: 176px;
+       background-color: white;
+       border-radius: 10px;
+       display: flex;
+        flex-direction: column;
+       justify-content: space-around;
+       align-items: center;
+       
+   }
+   .Upcoming-match-button button{
+       font-size: 20px;
+       font-weight: 700;
+       width: 210px;
+       height: 64px;
+       border-radius: 10px;
+       margin-bottom: 10px;
+       border: 1px solid #FFFFFF
+   }
+   .Upcoming-match-button button a{
+       text-decoration: none;
+       color: #161616;
+   }
+   .all-group-button button{
+       font-size: 20px;
+       font-weight: 700;
+       width: 210px;
+       height: 64px;
+       border-radius: 10px;
+       margin-bottom: 10px;
+       border: 1px solid white;
+   }
+     .blog-button button{
+       font-size: 20px;
+       font-weight: 700;
+       width: 210px;
+       height: 64px;
+       border-radius: 10px;
+       background-color: red;
+       border: 1px solid red;
+       margin-bottom: 10px;
+   }
+   .blog-button button a{
+       text-decoration: none;
+       color: white;
+   }
+   
+   .container{
+       display: flex;
+      
+   }
+   .blogs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+   }
+   .blog{
+       margin-left:0 ;
+       margin-top: 24px ;
+             
+   }
+   .blog-info{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start ;
+      margin: 0 20px;
+          
+   }
+   
+   footer{
+      text-align:none ;
+       width: 100%;
+       height: 500px;
+       background-color: #161616;
+       color: white;
+       margin-top: 100px;
+       
+          }
+    .goal{
+        font-size: 24px;
+        font-weight: 600;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    .footer-item{
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 ;
+    }
+    .footer-item a{
+        text-decoration: none;
+        color: white;
+    }
+    .social-icon{
+        display: flex;
+        justify-content: center;
+        font-size: 100%;
+           }
+    .social-icon i{
+        padding: 10px;
+    }
+   
+}
+/* media query for tablet device  */
+
+    @media only screen and (min-width:577px) and (max-width:992px) {
+
+.top-banner{
+    display: flex;
+    
+    width: 100%;
+   margin-bottom: 100px ;
+    background-color: black;
+ }
+
+.banner-info{
+    color: white;
+    margin: 5% 5%;
+    width: 35%;
+       
+}
+.banner-info h1{
+    font-size: 40px;
+   
+   }
+.banner-info p{
+     font-size: 14px;
+   }
+   
+   .photo-area{
+       margin-left: 10%;
+       margin-top: 10.3%;
+       margin-right: 10%;
+       justify-content: right;
+   }
+   .photo-area img{
+       width: 100%;
+       justify-content: right;
+
+   }
+  .container{
+       display: flex;
+       flex-direction: column;
+       
+       
+   }
+   
+   .button-area{
+        min-width: 312px;
+       height: 150px;
+       background-color: #FFFFFF;
+       border-radius: 10px;
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       flex-direction: column;
+       justify-content: space-between;
+       align-items: center;
+       
+   }
+   .Upcoming-match-button button{
+       font-size: 20px;
+       font-weight: 700;
+       margin-right: 10px;
+       border: 1px solid whitesmoke;
+       height: 64px;
+       border-radius: 10px;
+       width: 230px
+       
+   }
+   .Upcoming-match-button button a{
+       text-decoration: none;
+       color: black;
+   }
+   .all-group-button button{
+       font-size: 20px;
+       font-weight: 700;
+       width: 230px;
+       height: 64px;
+       border-radius: 10px;
+       border: 1px solid whitesmoke;
+       margin-right: 10px;
+   }
+     .blog-button button{
+       font-size: 20px;
+       font-weight: 700;
+       width: 230px;
+       height: 64px;
+       border-radius: 10px;
+       background-color: red;
+       border: 1px solid red;
+       margin-right: 0px;
+   }
+  
+   .blogs{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+   }
+.view-all{
+    display: block;
+}
+.view-all button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.view-all a{
+    text-decoration: none;
+    color: white;
+}
+.view-all-button{
+    border: 1px solid #DD0000;
+       border-radius: 10px ;
+       background-color: #DD0000;
+       color: white;
+       font-size: 20px;
+       font-weight: 400;
+       padding: 16px 25px;
+       margin-top:30px ;
+       margin-bottom:30px ;
+       margin-left: 50%;
+}
+
+   footer{
+      text-align: center;
+       width: 100%;
+       height: 345px;
+       background-color: black;
+       color: white;
+       margin-top: 100px;
+       
+          }
+    .goal{
+        font-size: 40px;
+        font-weight: 600;
+        padding-top: 70px;
+        padding-bottom: 60px;
+    }
+    .footer-item{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        justify-content:center ;
+        margin: 0 103px;
+        font-size: 9px;
+    }
+        
+    .footer-item a{
+        text-decoration: none;
+        color: white;
+        
+    }
+    .social-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 100%;
+           }
+    .social-icon i{
+        padding: 10px;
+    }
+}

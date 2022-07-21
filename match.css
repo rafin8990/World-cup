@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+body{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header part  */
+.top-banner{
+    display: flex;
+    width: 100%;
+   margin-bottom: 100px ;
+    background-image: linear-gradient(red, black);
+    border-radius: 15px;
+ }
+.banner-info{
+    color: white;
+    margin: 5% 5%;
+    width: 60%;
+       
+}
+.banner-info h1{
+     font-size: 70px;
+    font-weight: 700;
+    margin: 0;
+   }
+.banner-info p{
+     font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+   }
+   .link-button{
+       border: 1px solid red;
+       border-radius: 10px ;
+       background-color: red;
+       color: white;
+       font-size: 20px;
+       font-weight: 400;
+       text-align: center;
+       padding: 16px 25px;
+       margin-top:30px ;
+   }
+   .photo-area{
+       display: flex;
+       flex-direction: column;
+   }
+   
+   .photo-area .ball {
+       position: relative;
+       width: 20%;
+       left: 20%;
+       bottom: 25%;
+       
+   }
+   .photo-area .img{
+       width: 80%;
+       justify-content: right;
+
+   }
+   .top-banner:hover .ball{
+       transform: rotate(60deg);
+       transition: transform 1s ease-out 0.2s;
+  transform: translate(-500px, -100px);
+   }
+   /* button area  */
+.container {
+    display: flex;
+  }
+  .button-area {
+    min-width: 312px;
+    max-height: 312px;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .blog-button button {
+    font-size: 20px;
+    font-weight: 700;
+    width: 252px;
+    height: 64px;
+    border-radius: 10px;
+  }
+  .blog-button button a {
+    text-decoration: none;
+    color: black;
+  }
+  .all-group-button button {
+    font-size: 20px;
+    font-weight: 700;
+    width: 252px;
+    height: 64px;
+    border-radius: 10px;
+  }
+  .upcoming-match-button button {
+    font-size: 20px;
+    font-weight: 700;
+    width: 252px;
+    height: 64px;
+    border-radius: 10px;
+    background-color: red;
+  }
+  .upcoming-match-button button a {
+    text-decoration: none;
+    color: red;
+  }
+  /* flag content area  */
+  
+  .container {
+    display: flex;
+    margin-bottom: 130px;
+  }
+  .flags {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+   
+  }
+  .flag {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 24px;
+  }
+  .flags-details {
+    border: 1px solid gray;
+  }
+  .flag-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+  }
+  .flag-info img {
+    width: 100px;
+  }
+  .flag-info h1 {
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .flags-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .flags-details h1 {
+    margin: 0;
+  }
+  
+ /* footer area  */
+ footer{
+    text-align: center;
+     width: 100%;
+     height: 444px;
+     background-color: black;
+     color: white;
+     
+   }
+  .goal{
+      font-size: 48px;
+      font-weight: 600;
+      padding-top: 130px;
+      padding-bottom: 100px;
+  }
+  .footer-item{
+      display: flex;
+      justify-content: space-between;
+      margin: 0 351px ;
+  }
+  .footer-iteml p{
+      font-size: 12px;
+  }
+  .footer-item a{
+      text-decoration: none;
+      color: #FFFFFF;
+  }
+  .social-icon{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 100%;
+         }
+  .social-icon i{
+      padding: 10px;
+  }
+  
+ /* media query for mobile device  */
+  
+  @media only screen and (max-width: 576px) {
+
+    .top-banner {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .banner-info h1 {
+      font-size: 20px;
+    }
+    .banner-info p {
+      font-size: 10px;
+    }
+    .link-button {
+      font-size: 10px;
+      font-weight: 400;
+      text-align: center;
+      padding: 8px 12px;
+      margin-top: 30px;
+    }
+    .photo-area {
+      margin-left: 10%;
+      margin-top: 10.3%;
+      margin-right: 10%;
+      justify-content: right;
+    }
+    .photo-area .ball {
+      position: relative;
+      width: 30%;
+      left: 20%;
+      bottom: 150px;
+    }
+    .top-banner:hover .ball {
+      transform: rotate(60deg);
+      transition: transform 3s ease 0.2s;
+      transform: translate(-150px, -30px);
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+        }
+    .button-area{
+      min-width: 210px;
+      max-height: 176px;
+      background-color: white;
+      border-radius: 10px;
+      display: flex;
+           flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 30px;
+      
+  }
+  .blog-button button{
+      font-size: 20px;
+      font-weight: 700;
+      width: 210px;
+      height: 64px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      border: 1px solid white;
+  }
+  .blog-button button a{
+      text-decoration: none;
+      color: black;
+  }
+  .all-group-button button{
+      font-size: 20px;
+      font-weight: 700;
+      width: 210px;
+      height: 64px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      border: 1px solid white;
+  }
+    .upcoming-match-button button{
+      font-size: 20px;
+      font-weight: 700;
+      width: 210px;
+      height: 64px;
+      border-radius: 10px;
+      background-color: red;
+      border: 1px solid red;
+      margin-bottom: 10px;
+  }
+  .upcoming-match-button button a{
+      text-decoration: none;
+      color: white;
+  }
+    .flags {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .flag {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-left: 24px;
+    }
+    .flags-details {
+      border: 1px solid gray;
+    }
+    .flag-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 30px;
+    }
+    .flag-info img {
+      width: 50px;
+    }
+    .flag-info h1 {
+      padding: 0 15px;
+      margin-bottom: 10px;
+    }
+    footer{
+        text-align:none ;
+         width: 100%;
+         height: 500px;
+         background-color: black;
+         color: white;
+         margin-top: 100px;
+         
+            }
+      .goal{
+          font-size: 24px;
+          font-weight: 600;
+          padding-top: 24px;
+          padding-bottom: 24px;
+      }
+      .footer-item{
+          display: flex;
+          flex-direction: column;
+          margin: 0 0 ;
+      }
+      .footer-item a{
+          text-decoration: none;
+          color: white;
+      }
+      .social-icon{
+          display: flex;
+          justify-content: center;
+          font-size: 100%;
+             }
+      .social-icon i{
+          padding: 10px;
+      }
+      
+  }
+ /* media query for tablet device  */
+  @media only screen and (min-width: 577px) and (max-width: 992px) {
+    .top-banner{
+      display: flex;
+     width: 100%;
+      margin-bottom: 100px;
+      background-color: black;
+    }
+  
+    .banner-info {
+      color: white;
+      margin: 5% 5%;
+      width: 35%;
+    }
+    .banner-info h1 {
+      font-size: 40px;
+    }
+    .banner-info p {
+      font-size: 14px;
+    }
+  
+    .photo-area {
+      margin-left: 10%;
+      margin-top: 10.3%;
+      margin-right: 10%;
+      justify-content: right;
+    }
+    .photo-area img {
+      width: 100%;
+      justify-content: right;
+    }
+  .top-banner:hover .ball {
+    transform: rotate(60deg);
+    transition: transform 1s ease-out 0.2s;
+    transform: translate(-250px, -100px);
+  }
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+    .button-area{
+      min-width: 312px;
+     height: 150px;
+     background-color: white;
+     border-radius: 10px;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     
+  }
+  .blog-button button{
+     font-size: 20px;
+     font-weight: 700;
+     height: 64px;
+     width: 230px;
+     border: 1px solid whitesmoke;
+     margin-right: 10px;
+  }
+  .blog-button button a{
+     text-decoration: none;
+     color: #161616;
+  }
+  .all-group-button button{
+     font-size: 20px;
+     font-weight: 700;
+     width: 230px;
+     height: 64px;
+     border-radius: 10px;
+     border: 1px solid whitesmoke;
+     margin-right: 10px;
+  }
+   .upcoming-match-button button{
+     font-size: 20px;
+     font-weight: 700;
+     width: 230px;
+     height: 64px;
+     border-radius: 10px;
+     background-color: red;
+     border: 1px solid red;
+     margin-right: 0px;
+  }
+     .upcoming-match-button button a{
+         text-decoration: none;
+         color: white;
+      } 
+  
+    .flags {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 30px;
+      counter-reset: 30px;
+    }
+    .flag {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-left: 24px;
+      margin-top: 24px;
+    }
+    .flags-details {
+      border: 1px solid gray;
+    }
+    .flag-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 30px;
+    }
+    .flag-info img {
+      width: 50px;
+    }
+    .flag-info h1 {
+      padding: 0 20px;
+      margin-bottom: 10px;
+    }
+  .button-area {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+      align-items: center;
+    }
+    footer{
+        text-align: center;
+         width: 100%;
+         height: 345px;
+         background-color: black;
+         color: white;
+         margin-top: 100px;
+         
+            }
+      .goal{
+          font-size: 40px;
+          font-weight: 600;
+          padding-top: 70px;
+          padding-bottom: 60px;
+      }
+      .footer-item{
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          align-items: center;
+          justify-content:center ;
+          margin: 0 103px;
+          font-size: 9px;
+      }
+          
+      .footer-item a{
+          text-decoration: none;
+          color: white;
+          
+      }
+      .social-icon{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 100%;
+             }
+      .social-icon i{
+          padding: 10px;
+      }
+      
+  }
